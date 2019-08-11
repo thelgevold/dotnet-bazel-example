@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5AC5DCEB-5ED5-4488-8DF7-660A6B997E6F}"
+	ProjectSection(SolutionItems) = preProject
+		WORKSPACE = WORKSPACE
+		BUILD.bazel = BUILD.bazel
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Consumer", "Queue.Consumer\Queue.Consumer.csproj", "{B2A80763-55F6-4992-95D2-DB6C8AF5F5E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Producer", "Queue.Producer\Queue.Producer.csproj", "{FBC83AB9-3BF4-4AA6-9481-CBCEDF2092B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A80763-55F6-4992-95D2-DB6C8AF5F5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A80763-55F6-4992-95D2-DB6C8AF5F5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A80763-55F6-4992-95D2-DB6C8AF5F5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A80763-55F6-4992-95D2-DB6C8AF5F5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC83AB9-3BF4-4AA6-9481-CBCEDF2092B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC83AB9-3BF4-4AA6-9481-CBCEDF2092B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC83AB9-3BF4-4AA6-9481-CBCEDF2092B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC83AB9-3BF4-4AA6-9481-CBCEDF2092B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
