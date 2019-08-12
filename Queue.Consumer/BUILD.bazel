@@ -1,4 +1,5 @@
 load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "core_binary")
+load("@io_bazel_rules_docker//container:container.bzl", "container_image", "container_push")
 
 core_binary(
   name = "src",
@@ -10,4 +11,19 @@ core_binary(
       "@rabbitmq.client//:netcoreapp2.1_core",
   ],
   visibility = ["//visibility:public"],
+)
+
+container_image(
+    name = "consumer",
+    base = "@core_runtime//image",
+    files = [":src"],
+    cmd = ["dotnet src.exe"]
+)
+container_push(
+   name = "push",
+   image = ":consumer",
+   format = "Docker",
+   registry = "index.docker.io",
+   repository = "thelgevold/rabbitmq-consumer",
+   tag = "5"
 )
